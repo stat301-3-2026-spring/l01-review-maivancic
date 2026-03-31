@@ -1,8 +1,8 @@
 ---
 title: "L01 Review"
 subtitle: "Data Science 3 with R (STAT 301-3)"
-author: "YOUR NAME"
-pagetitle: "L01 YOUR NAME"
+author: "Mackenzie Ivancic"
+pagetitle: "L01 Mackenzie Ivancic"
 date: today
 
 format:
@@ -25,10 +25,7 @@ citation-location: margin
 
 ::: {.callout-tip icon="false"}
 ## Github Repo Link
-
-To link to your github **repo**sitory, appropriately edit the example link below. Meaning replace `https://your-github-repo-url` with your github repo url. Suggest verifying the link works before submitting.
-
-[https://your-github-repo-url](https://your-github-repo-url)
+[Repo link](https://github.com/stat301-3-2026-spring/l01-review-maivancic.git)
 :::
 
 ## Overview
@@ -46,7 +43,16 @@ Provide a brief outline/overview of the steps involved in a supervised machine l
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+- Step 1: Split the dataset appropriately based on the number of observations and variables
+- Step 2: Perform EDA and feaute engineering exploration on training dataset
+- Step 3: Fold the training data for resampling
+- Step 4: Define the recipes that will be used for the desired models
+- Step 5: Set the engine of the models with the desired tuning parameters
+- Step 6: Store the parameters and define the tuning grid 
+- Step 7: Create the workflow for the models
+- Step 8: Tune the model grid, with separate R scripts for different models
+- Step 9: Compare all models and select the best one
+- Step 10: Obtain final results and assess how the final model performs
 
 :::
 
