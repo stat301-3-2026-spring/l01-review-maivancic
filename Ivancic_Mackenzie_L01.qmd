@@ -186,7 +186,7 @@ When splitting the data, why is it useful to stratify by the outcome/target vari
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+It is useful to stratify by the outcome variable when splitting the data to ensure that there is an even distribution of the outcome variable across the testing and training datasets, as well as across the folds, to prevent situations where there is an unrealistically high concentration of observations on one side of the spectrum that distors model performance. For example, in a classification ML problem seeking to predict if an individual is diabetic based on risk factors, if we did not stratify by the outcome variable of whether or not an individual has diabetes, the possibility exists that almost all of the observations in which an individual did have diabetes could end up in the training dataset, with almost none in the testing dataset, thereby distorting the model and reducing the predictive performance of the model.
 
 :::
 
