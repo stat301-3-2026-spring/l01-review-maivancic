@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Mackenzie Ivancic">
-<meta name="dcterms.date" content="2026-03-31">
+<meta name="dcterms.date" content="2026-04-05">
 
 <title>L01 Mackenzie Ivancic</title>
 <style>
@@ -2229,7 +2229,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 31, 2026</p>
+      <p class="date">April 5, 2026</p>
     </div>
   </div>
   
@@ -2302,7 +2302,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>Supervised learning is conducted on labeled data, where the data is used to train models to predict given outcomes. Comparatively, unsupervised learning is conducted on unlabeled data, where the process of learning discovers nuanced structures and relationships in the data to learn information from what the data tells us, not what we determine the clusters to be.</p>
 </div>
 </div>
 </section>
@@ -2321,7 +2321,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>The goal of descriptive models is to describe some characteristics of the data by visually emphasizing some trend or pattern within the data.</p>
 </div>
 </div>
 </section>
@@ -2337,7 +2337,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>The goal of an inferential model is to produce a decision that answers a research question or tests a hypothesis, such as understanding if one variable is important in modeling a target variable.</p>
 </div>
 </div>
 </section>
@@ -2353,7 +2353,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>The goal of a predictive model is to produce the most accurate prediction possible on a new dataset by training a model on other data.</p>
 </div>
 </div>
 </section>
@@ -2374,7 +2374,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>Mechanistic models follow some given form or equation, like following a linear regression to estimate a set of parameters. They are often easier to understand and interpret, but the selected model form could be a poor fit depending on the data.</p>
 </div>
 </div>
 </section>
@@ -2391,7 +2391,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>An empirically driven model makes no assumtions about the formula the model follows, making them more flexible and often better at predictive performance. However, this requires more observations and generates a higher risk of overfittig the model to the training data.</p>
 </div>
 </div>
 </section>
@@ -2408,7 +2408,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>Mechanistic models are parametric models, while empirically driven models are nonparametric models.</p>
 </div>
 </div>
 </section>
@@ -2425,7 +2425,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>Generally, a mechanistic model is easier to interpret due to the fact the parameters used to construct the model often have some meaning in the context of the data, allowing easier communication of what drives changes in the outcome variable or the model. Comparatively, with empirically driven models, they often capture more complex relationships that aren’t as simple or easy to communicate as “parameter x is correlated with an increase it outcome y”, thus making it harder to interpret.</p>
 </div>
 </div>
 </section>
@@ -2442,7 +2442,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>An empirically driven model is more flexible as it allows the data to drive the patterns and relationships captured in the model whereas a mechanistic model supplies the more rigid formula that the model should follow. For example, a mechanistic model might use a pre-defined linear equation to construct the model, which is less flexible than allowing the data itself to dictate if there are linear or non-linear relationships.</p>
 </div>
 </div>
 </section>
@@ -2459,7 +2459,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>Mechanistic models tend to have higher bias and lower variance as the rigidity of the model structure means small changes in data are unlikely to drastically effect the outcome, leading to small variance, but also means that small nuances and patterns in the data may not be captured, such that the outcome is consistently miscalculated, leading to higher bias. Comparatively, empirically driven models tend to have higher variance and lower bias, as the flexibility in the models allows them to adapt to the data and fit it better, reducing bias, while also carrying a higher risk of overfitting due to sensitivity to the training dataset, which could lead to higher variance with small differences in the data.</p>
 </div>
 </div>
 </section>
@@ -2477,7 +2477,7 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>Regression ML problems seek to predict a continuous numerical quantity, such as the price of a house, while classification ML problems seek to predict the categorical class of the outcome, such as whether an individual would survive or not on the Titanic.</p>
 </div>
 </div>
 </section>
@@ -2511,7 +2511,8 @@ vertical-align: -.125em;
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>YOUR SOLUTION HERE</p>
+<p>V-fold cross validation takes the training data and partitions it into a given number (n) of folds. Then, n-1 folds are used as an analysis set while 1 is used as an assessment set for the run of the model. This is iterated n times so each fold serves as the assessment set once. This process is repeated for as many repeats as given. Models are then trained on the analysis folds to produce many assessments of the predictive performance of the models, which are averaged together. This results in a an average metric, such as RMSE, that provides an estimation for how well a model will perform on the testing set.</p>
+<p>We use this to develop an idea of how effective our models are when it comes to predictive performance, and to select the best possible model to fit to the reserved testing data.</p>
 </div>
 </div>
 </section>
