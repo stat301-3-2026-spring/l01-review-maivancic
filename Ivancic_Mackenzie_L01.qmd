@@ -34,7 +34,6 @@ The goal of this lab is to review machine learning/predictive modeling vocabular
 
 ## Questions
 
-When completing the following questions ensure your solutions are neatly formatted and clearly indicated. Consider including diagrams/images in some of your solutions, if it helps to make things easier to describe/discuss.
 
 ### Question 1
 
@@ -44,7 +43,7 @@ Provide a brief outline/overview of the steps involved in a supervised machine l
 ## Solution
 
 - Step 1: Split the dataset appropriately based on the number of observations and variables
-- Step 2: Perform EDA and feaute engineering exploration on training dataset
+- Step 2: Perform EDA and feature engineering exploration on training dataset
 - Step 3: Fold the training data for resampling
 - Step 4: Define the recipes that will be used for the desired models
 - Step 5: Set the engine of the models with the desired tuning parameters
@@ -121,7 +120,7 @@ What does it mean to be an empirically driven model?
 ::: {.callout-tip icon="false"}
 ## Solution
 
-An empirically driven model makes no assumtions about the formula the model follows, making them more flexible and often better at predictive performance. However, this requires more observations and generates a higher risk of overfittig the model to the training data. 
+An empirically driven model makes no assumptions about the formula the model follows, making them more flexible and often better at predictive performance. However, this requires more observations and generates a higher risk of overfitting the model to the training data. 
 
 :::
 
@@ -210,7 +209,7 @@ When might we use a bootstrap resampling procedure instead of v-fold cross valid
 ::: {.callout-tip icon="false"}
 ## Solution
 
-A bootstrap sampling proceure might be used instead of V-fold cross validation to estimate test RMSE when the dataset is smaller, making splitting the data into multiple folds is not the most feasible, or when there are significant class imbalances or noise in the dataset. This is because bootstrap resampling samples with replacement, so it is possible for a minority class to be overrepresented in some models, and prevents using folds that are too small for reliable estimates.
+A bootstrap sampling procedure might be used instead of v-fold cross validation to estimate test RMSE when the dataset is smaller, making splitting the data into multiple folds is not the most feasible, or when there are significant class imbalances or noise in the dataset. This is because bootstrap resampling samples with replacement, so it is possible for a minority class to be overrepresented in some models, and prevents using folds that are too small for reliable estimates.
 
 :::
 
@@ -257,7 +256,7 @@ A company with a subscription based service (for example Netflix, Disney+, New Y
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+This is an inferential problem, as it seeks to understand if the predictor of a high number of service calls is related to the outcome of the likelihood of a customer leaving the service. Hence, it is not asking to predict if an individual will leave the service, but seeking to understand the relationship between service calls and churn.
 
 :::
 
@@ -266,7 +265,7 @@ YOUR SOLUTION HERE
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+This is a prediction problem, as it is looking to predict whether or not an individual will leave the company within the next month based on the data of the customer. Hence, it is seeking to make the most accurate prediction rather than assess what variables might cause the customer to leave the service.
 
 :::
 
