@@ -186,7 +186,7 @@ When splitting the data, why is it useful to stratify by the outcome/target vari
 ::: {.callout-tip icon="false"}
 ## Solution
 
-It is useful to stratify by the outcome variable when splitting the data to ensure that there is an even distribution of the outcome variable across the testing and training datasets, as well as across the folds, to prevent situations where there is an unrealistically high concentration of observations on one side of the spectrum that distors model performance. For example, in a classification ML problem seeking to predict if an individual is diabetic based on risk factors, if we did not stratify by the outcome variable of whether or not an individual has diabetes, the possibility exists that almost all of the observations in which an individual did have diabetes could end up in the training dataset, with almost none in the testing dataset, thereby distorting the model and reducing the predictive performance of the model.
+It is useful to stratify by the outcome variable when splitting the data to ensure that there is an even distribution of the outcome variable across the testing and training datasets, as well as across the folds, to prevent situations where there is an unrealistically high concentration of observations on one side of the spectrum that distorts model performance. For example, in a classification ML problem seeking to predict if an individual is diabetic based on risk factors, if we did not stratify by the outcome variable of whether or not an individual has diabetes, the possibility exists that almost all of the observations in which an individual did have diabetes could end up in the training dataset, with almost none in the testing dataset, thereby distorting the model and reducing the predictive performance of the model.
 
 :::
 
@@ -197,9 +197,9 @@ Briefly describe how v-fold cross validation with repeats is used to estimate te
 ::: {.callout-tip icon="false"}
 ## Solution
 
-V-fold cross validation takes the training data and partitions it into a given number (n) of folds. Then, n-1 folds are used as an analysis set while 1 is used as an assessment set for the run of the model. This is iterated n times so each fold serves as the assessment set once. This process is repeated for as many repeats as given. Models are then trained on the analysis folds to produce many assessments of the predictive performance of the models, which are averaged together. This results in a an average metric, such as RMSE, that provides an estimation for how well a model will perform on the testing set.
+V-fold cross validation takes the training data and partitions it into a given number (n) of folds. Then, n-1 folds are used as an analysis set while 1 is used as an assessment set for the run of the model. This is iterated n times so each fold serves as the assessment set once. This process is repeated for as many repeats as given. Models are then trained on the analysis folds to produce many assessments of the predictive performance of the models, which are averaged together. This results in an average metric, such as RMSE, that provides an estimation for how well a model will perform on the testing set.
 
-We use this to develop an idea of how effective our models are when it comes to predictive performance, and to select the best possible model to fit to the reserved testing data.
+We use this to develop a reliable sense of how effective our models are when it comes to predictive performance, and to select the best possible model to fit to the reserved testing data.
 
 :::
 
@@ -210,7 +210,7 @@ When might we use a bootstrap resampling procedure instead of v-fold cross valid
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+A bootstrap sampling proceure might be used instead of V-fold cross validation to estimate test RMSE when the dataset is smaller, making splitting the data into multiple folds is not the most feasible, or when there are significant class imbalances or noise in the dataset. This is because bootstrap resampling samples with replacement, so it is possible for a minority class to be overrepresented in some models, and prevents using folds that are too small for reliable estimates.
 
 :::
 
@@ -221,7 +221,7 @@ Briefly describe model tuning and why we use it.
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Model tuning is the process of adjusting the hyperparameters of a model, such as the number of trees in a random forest model or the number of neighbors in a K-nearest neighbors model, in order to improve predictive performance of the model. Hyperparameters are variables inherent to the model structure and not the data, but can define the behavior of how a model performs. Based on the data, including the characteristics of the dataset such as number of observations and number of parameters, as well as the relationships within the data, different hyperparameters within the model can produce different results. Hence, finding an ideal combination of hyperparameters can allow us to find the best construction of a model possible to maximize predictive performance. 
 
 :::
 
@@ -232,7 +232,7 @@ What are two common performance metrics when dealing with a regression ML proble
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Two common performance metrics for a regression ML problem would be RMSE and $R^2$. RMSE, or the root mean square error, tells us how far the predictions are from the actual values on average and penalizes against large prediction errors. Comparatively, $R^2$ is not a direct measurement of error but tells us the amount of variance in the results explained by the model, with a higher value of $R^2$ (closer to 1) indicating that the model does a better job of capturing variance. 
 
 :::
 
@@ -241,7 +241,8 @@ What are two common performance metrics when dealing with a classification ML pr
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Two common performance metrics for a classification ML problem would be accuracy and ROC-AUC. Accuracy communicates the proportion of correct predictions made by the model while ROC-AUC (area under the Receiver Operating Characteristic curve) measures the models ability to distinguish between classes no matter the classification threshold.  
+
 
 :::
 
